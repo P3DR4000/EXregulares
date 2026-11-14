@@ -1,0 +1,69 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Expressões Regulares</title>
+    <script src="js/jMaskWiFi.js" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <h2>Lista de Exercícios - Expressões Regulares</h2>
+
+    <p>a) Data de nascimento:</p>
+    <input type="text" id="txtA" value="14/05/2005">
+    <button id="btnA">Validar</button>
+
+    <p>b) CPF:</p>
+    <input type="text" id="txtB" value="123.456.789-00"
+    onkeypress="inserirMascara('txtB','xxx.xxx.xxx-xx')">
+    <button id="btnB">Validar</button>
+
+    <p>c) Matrícula do aluno:</p>
+    <input type="text" id="txtC" value="IFTM-123/456-A9">
+    <button id="btnC">Validar</button>
+
+    <p>d) Código de disciplina do IFTM:</p>
+    <input type="text" id="txtD" value="MT-12.345-IFTM"
+    onkeypress="inserirMascara('txtD','xx-xx.xxx-xxxx')">
+    <button id="btnD">Validar</button>
+
+    <p>e) Código de disciplina do IFTM V2:</p>
+    <input type="text" id="txtE" value="MT-12.345-ifTM"
+    onkeypress="inserirMascara('txtE','xx-xx.xxx-xxxx')">
+    <button id="btnE">Validar</button>
+
+    <p>f) Código de disciplina do IFTM V3:</p>
+    <input type="text" id="txtF" value="m t-12.345-i f t m">
+    <button id="btnF">Validar</button>
+
+    <p>g) Campus:</p>
+    <input type="text" id="txtG" value="IFTM campus Uberlândia Centro">
+    <button id="btnG">Validar</button>
+
+    <p>h) Telefone:</p>
+    <input type="text" id="txtH" value="+55(34)99999-1234"
+    onkeypress="inserirMascara('txtH','+xx(xx)xxxxx-xxxx')">
+    <button id="btnH">Validar</button>
+
+    <p>i) Telefone V2:</p>
+    <input type="text" id="txtI" value="(34) 99999-1234">
+    <button id="btnI">Validar</button>
+
+    <p>j) Altura:</p>
+    <input type="text" id="txtJ" value="1,75">
+    <button id="btnJ">Validar</button>
+
+    <p>k) Faturamento anual:</p>
+    <input type="text" id="txtK" value="R$5.601.478,10">
+    <button id="btnK">Validar</button>
+
+    <p>l) Cronômetro:</p>
+    <input type="text" id="txtL" value="23:59:59:99"
+    onkeypress="inserirMascara('txtL','xx:xx:xx:xx')">
+    <button id="btnL">Validar</button>
+
+</body>
+</html>
